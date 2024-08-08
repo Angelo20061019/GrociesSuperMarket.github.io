@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Grocies Supermarket" content="width=device-width, initial-scale=1.0">
+    <title>Grocies Supermarket</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/1-removebg-preview.png">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <!-- Navigation bar , logo & search bar -->
+    <header>
+        <section class="header_main">
+            <nav class="bar">
+                <a href="index.html">
+                    <img class="logoimg" src="image/new_logo_-removebg-preview.png" alt="logo" width="150" height="110">
+                </a>
+                <div class="sreach__nav">
+                    <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn1">
+                            MENU
+                        </label>
+                    <ul class="nav-links">
+                        <li class="nav-link"><a href="index.html"> <b>Home</b></a></li>
+                        <li class="nav-link"><a href="about.html"><b>About Us</b></a></li>
+                        <li class="nav-link product"><b>Products</b>
+                            <ul class="dropdown">
+                                <li class="nav-link"><a href="dairy_product.html"><b>Dairy Products</b></a></li>
+                                <li class="nav-link"><a href="fruit.html"><b>Fruits</b> </a></li>
+                                <li class="nav-link"><a href="meatNseafood.html"><b>Meat and Sea food</b></a></li>
+                                <li class="nav-link"><a href="bakingNcooking.html"><b>Baking and Cooking
+                                            Ingredients</b></a></li>
+                                <li class="nav-link"><a href="vegetables.html"><b>Vegetables Products</b></a></li>
+                                <li class="nav-link"><a href="CosmeticsAndSkinCareProduct.html"><b>Cosmetics & Skin care product</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link"><a href="loyalty_registation.html"><b>Loyalty Rgistation</b></a></li>
+                    </ul>
+                    <br>
+                        <div class="search">
+                            <input type="text" placeholder=Search>
+                            <a href="#">
+                                <i class="fas fa-search "></i>
+                            </a>
+                        </div>
+                </div>
+                <div class="cart" id="cart">
+                    <a href="cart.html">
+                        <img src="image/cart_new.png" width="40" height="36" alt="mainImage">
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <section class="diary_main_image">
+        <div class="diary_main_text">
+            <div class="diary_small">
+                <P>come & buy </P>
+            </div>
+            <div class="diary_large">
+                VEGETABLES PRODUCTS
+            </div>
+            <div class="diary_intro_para">
+                <p>JUST FOR YOU !</p>
+            </div>
+            <section class="dairymainimagesection">
+                <img class="dairymainimage" src="image/vegetablesmaincopy2.jpg" alt="dairy image">
+            </section>
+        </div>
+    </section>
+
+    <!--Fresh Vegetables product section-->
+    <section class="vegetables_paroducts">
+        <div class="vegetables_fresh_h1_para">
+            <h1 class="vegetables_product_h1">
+                Fresh Vegetables
+            </h1>
+            <p class="vegetables_product_para">
+                Supermarkets typically offer a wide variety of fresh vegetables, including leafy greens like spinach,
+                kale, and lettuce, root vegetables such as potatoes, carrots, and beets, cruciferous vegetables like
+                broccoli, cauliflower, and cabbage, as well as tomatoes, cucumbers, bell peppers, onions, garlic, and
+                more.
+                Fresh vegetables are versatile ingredients used in salads, stir-fries, soups, stews, and numerous other
+                dishes.
+            </p>
+        </div>
+        <div class="vegetables_products_fresh">
+            <div class="vegetables_product_fresh_1">
+                <div class="box1">
+                    <a href="#popup-box1">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_1_img" src="image/Leafy_Greens-removebg-preview.png"
+                            alt="vegetables" style="width: 55%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_1_figcap_para">
+                                Leafy Greens
+                            </h1>
+                            <p class="vegetables_product_fresh_2_figcap_para">
+                                100g <br> Rs.250.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box1" class="modal1">
+                    <div class="content1">
+                        <div class="popup-img1">
+                            <img class="diary_product_milk_2_img1" src="image/Leafy_Greens-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content1">
+                            <a class="close-btn1" href="#">&times;</a>
+                            <h1 class="popup-h1-1">Leafy Greens</h1>
+                            <p class="popup-content-p1">100 g = RS.250.00</p>
+                            <div class="popup-input1">
+                                Grams : <input type="number" id="leafy-greens-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn1" id="leafy-greens" data-product-name="Leafy Greens"
+                                data-product-price="250"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vegetables_product_fresh_1">
+                <div class="box2">
+                    <a href="#popup-box2">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_2_img"
+                            src="image/onion-bulbs-84722_1280-removebg-preview.png" alt="onion" style="width: 55%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_2_figcap_para">
+                                Onion
+                            </h1>
+                            <p class="vegetables_product_fresh_2_figcap_para">
+                                100g <br> Rs.100.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box2" class="modal2">
+                    <div class="content2">
+                        <div class="popup-img2">
+                            <img class="diary_product_milk_2_img"
+                                src="image/onion-bulbs-84722_1280-removebg-preview.png" alt="milk" style="width: 90%">
+                        </div>
+                        <div class="popup-content2">
+                            <a class="close-btn2" href="#">&times;</a>
+                            <h1 class="popup-h1-2">Onion</h1>
+                            <p class="popup-content-p2">100g = RS.100.00</p>
+                            <div class="popup-input2">
+                                Grams : <input type="number" id="onion-vege-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn2" id="onion" data-product-name="Onion"
+                                data-product-price="100"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vegetables_product_fresh_1">
+                <div class="box3">
+                    <a href="#popup-box3">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_3_img" src="image/kale-3189314_1280-removebg-preview.png"
+                            alt="kale" style="width: 55%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_3_figcap_para">
+                                Kale
+                            </h1>
+                            <p class="vegetables_product_fresh_3_figcap_para">
+                                100g <br> Rs.100.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box3" class="modal3">
+                    <div class="content3">
+                        <div class="popup-img3">
+                            <img class="diary_product_milk_2_img3" src="image/kale-3189314_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content3">
+                            <a class="close-btn3" href="#">&times;</a>
+                            <h1 class="popup-h1-3">Kale</h1>
+                            <p class="popup-content-p3">100g = RS.100.00</p>
+                            <div class="popup-input3">
+                                Grams : <input type="number" id="kale-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn3" id="kale" data-product-name="Kale" data-product-price="100"> Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vegetables_product_fresh_1">
+                <div class="box4">
+                    <a href="#popup-box4"><figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_4_img"
+                            src="image/tomatoes-1238255_1280-removebg-preview.png" alt="tomatoes" style="width: 55%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_4_figcap_para">
+                                Tomatoes
+                            </h1>
+                            <p class="vegetables_product_fresh_4_figcap_para">
+                                100g <br> Rs.100.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box4" class="modal4">
+                    <div class="content4">
+                        <div class="popup-img4">
+                            <img class="diary_product_milk_2_img4"
+                                src="image/tomatoes-1238255_1280-removebg-preview.png" alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content4">
+                            <a class="close-btn4" href="#">&times;</a>
+                            <h1 class="popup-h1-4">Tomatoes</h1>
+                            <p class="popup-content-p4">100g = RS.100.00</p>
+                            <div class="popup-input4">
+                                Grams : <input type="number" id="tomatoes-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn4" id="tomatoes" data-product-name="Tomatoes"
+                                data-product-price="100"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Frozen Vegetables product section-->
+    <section class="vegetables_paroducts">
+        <div class="vegetables_fresh_h1_para">
+            <h1 class="vegetables_product_h1">
+                Frozen Vegetables
+            </h1>
+            <p class="vegetables_product_para">
+                Frozen vegetables are convenient options that have been harvested at peak ripeness and quickly frozen to
+                retain their nutrients and flavor. They come in a variety of options, including mixed vegetables, peas,
+                corn,
+                green beans, broccoli florets, and more. Frozen vegetables are often used as side dishes, added to
+                casseroles,
+                stir-fries, or soups, or incorporated into smoothies.
+            </p>
+        </div>
+        <div class="vegetables_products_fresh">
+            <div class="vegetables_product_fresh_1">
+                <div class="box5">
+                    <a href="#popup-box5">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_1_img" src="image/peas-16803_1280-removebg-preview.png"
+                            alt="vegetables" style="width: 95%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_1_figcap_para">
+                                Peas
+                            </h1>
+                            <p class="vegetables_product_fresh_2_figcap_para">
+                                100g <br> Rs.150.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box5" class="modal5">
+                    <div class="content5">
+                        <div class="popup-img5">
+                            <img class="diary_product_milk_2_img5" src="image/peas-16803_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content5">
+                            <a class="close-btn5" href="#">&times;</a>
+                            <h1 class="popup-h1-5">Peas</h1>
+                            <p class="popup-content-p5">100g = RS.150.00</p>
+                            <div class="popup-input5">
+                                Grams : <input type="number" id="peas-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn5" id="peas" data-product-name="Peas" data-product-price="150"> Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vegetables_product_fresh_1">
+                <div class="box6">
+                    <a href="#popup-box6">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_2_img"
+                            src="image/broccoli-1884353_1280-removebg-preview.png" alt="onion" style="width: 40%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_2_figcap_para">
+                                Broccoli
+                            </h1>
+                            <p class="vegetables_product_fresh_2_figcap_para">
+                                100g <br> Rs.170.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box6" class="modal6">
+                    <div class="content6">
+                        <div class="popup-img6">
+                            <img class="diary_product_milk_2_img6"
+                                src="image/broccoli-1884353_1280-removebg-preview.png" alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content6">
+                            <a class="close-btn6" href="#">&times;</a>
+                            <h1 class="popup-h1-6">Broccoli</h1>
+                            <p class="popup-content-p6">100g = RS.170.00</p>
+                            <div class="popup-input6">
+                                Grams : <input type="number" id="broccoli-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn6" id="broccoli" data-product-name="Broccoli"
+                                data-product-price="170"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vegetables_product_fresh_1">
+                <div class="box7">
+                    <a href="#popup-box7">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_3_img" src="image/beans-1576700_1920-removebg-preview.png"
+                            alt="beans" style="width: 95%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_3_figcap_para">
+                                Beans
+                            </h1>
+                            <p class="vegetables_product_fresh_3_figcap_para">
+                                100g <br> Rs.200.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box7" class="modal7">
+                    <div class="content7">
+                        <div class="popup-img7">
+                            <img class="diary_product_milk_2_img7" src="image/beans-1576700_1920-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content7">
+                            <a class="close-btn7" href="#">&times;</a>
+                            <h1 class="popup-h1-7">Beans</h1>
+                            <p class="popup-content-p7">100g = RS.200.00</p>
+                            <div class="popup-input7">
+                                Grams : <input type="number" id="beans-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn7" id="beans" data-product-name="Beans" data-product-price="200">
+                                Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vegetables_product_fresh_1">
+                <div class="box8">
+                    <a href="#popup-box8">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_4_img" src="image/corn.png" alt="corn" style="width: 70%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_4_figcap_para">
+                                Corn
+                            </h1>
+                            <p class="vegetables_product_fresh_4_figcap_para">
+                                Rs.200.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box8" class="modal8">
+                    <div class="content8">
+                        <div class="popup-img8">
+                            <img class="diary_product_milk_2_img8" src="image/corn.png" alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content8">
+                            <a class="close-btn8" href="#">&times;</a>
+                            <h1 class="popup-h1-8">Corn</h1>
+                            <p class="popup-content-p8">100g = RS.200.00</p>
+                            <div class="popup-input8">
+                                Grams : <input type="number" id="corn-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn8" id="corn" data-product-name="Corn" data-product-price="200"> Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Fresh-Cut Vegetables product section-->
+    <section class="vegetables_paroducts">
+        <div class="vegetables_fresh_h1_para">
+            <h1 class="vegetables_product_h1">
+                Fresh-Cut Vegetables
+            </h1>
+            <p class="vegetables_product_para">
+                Supermarkets often provide pre-cut and pre-packaged fresh vegetables, such as carrot sticks, celery
+                sticks,
+                bell pepper strips, and salad mixes. These convenient options are ready to eat and can be used for
+                snacking,
+                dipping, or as salad ingredients.
+            </p>
+        </div>
+        <div class="vegetables_products_fresh">
+            <div class="vegetables_product_fresh_1">
+                <div class="box9">
+                    <a href="#popup-box9">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_1_img"
+                            src="image/pumpkin-2787208_1280-removebg-preview.png" alt="pumpkin" style="width: 65%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_1_figcap_para">
+                                Pumpkin
+                            </h1>
+                            <p class="vegetables_product_fresh_2_figcap_para">
+                                100g <br> Rs.350.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box9" class="modal9">
+                    <div class="content9">
+                        <div class="popup-img9">
+                            <img class="diary_product_milk_2_img9" src="image/pumpkin-2787208_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content9">
+                            <a class="close-btn9" href="#">&times;</a>
+                            <h1 class="popup-h1-9">Pumpkin</h1>
+                            <p class="popup-content-p9">100g = RS.350.00</p>
+                            <div class="popup-input9">
+                                Grams : <input type="number" id="pumpkin-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn9" id="pumpkin" data-product-name="Pumpkin"
+                                data-product-price="350"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vegetables_product_fresh_1">
+                <div class="box10">
+                    <a href="#popup-box10">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_2_img" src="image/garlic-3084483_1280-removebg-preview.png"
+                            alt="garlic" style="width: 70%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_2_figcap_para">
+                                Garlic
+                            </h1>
+                            <p class="vegetables_product_fresh_2_figcap_para">
+                                100g <br> Rs.90.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box10" class="modal10">
+                    <div class="content10">
+                        <div class="popup-img10">
+                            <img class="diary_product_milk_2_img10" src="image/garlic-3084483_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content10">
+                            <a class="close-btn10" href="#">&times;</a>
+                            <h1 class="popup-h1-10">Garlic</h1>
+                            <p class="popup-content-p10">100g = RS.90.00</p>
+                            <div class="popup-input10">
+                                Grams : <input type="number" id="garlic-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn10" id="garlic" data-product-name="Garlic" data-product-price="90">
+                                Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vegetables_product_fresh_1">
+                <div class="box11">
+                    <a href="#popup-box11">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_dragon_3_img"
+                            src="image/fruit-2477530_1280-removebg-preview.png" alt="dragon fruit" style="width: 95%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_3_figcap_para">
+                                Dragon fruit
+                            </h1>
+                            <p class="vegetables_product_fresh_3_figcap_para">
+                                100g <br> Rs.150.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box11" class="modal11">
+                    <div class="content11">
+                        <div class="popup-img11">
+                            <img class="diary_product_milk_2_img11" src="image/fruit-2477530_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content11">
+                            <a class="close-btn11" href="#">&times;</a>
+                            <h1 class="popup-h1-11">Dragon fruit</h1>
+                            <p class="popup-content-p11">100g = RS.150.00</p>
+                            <div class="popup-input11">
+                                Grams : <input type="number" id="dragon-fruit-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn11" id="dragon-fruit" data-product-name="Dragon fruit"
+                                data-product-price="150"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vegetables_product_fresh_1">
+                <div class="box12">
+                    <a href="#popup-box12">
+                        <figure class="vegetables_product_fresh_1_figure">
+                        <img class="vegetables_product_fresh_4_img"
+                            src="image/avocado-1287100_1280-removebg-preview.png" alt="avocado" style="width: 45%;">
+                        <figcaption class="vegetables_product_fresh_1_figcap_h1">
+                            <h1 class="vegetables_product_fresh_4_figcap_para">
+                                Avocado
+                            </h1>
+                            <p class="vegetables_product_fresh_4_figcap_para">
+                                Rs.150.00
+                            </p>
+                        </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box12" class="modal12">
+                    <div class="content12">
+                        <div class="popup-img12">
+                            <img class="diary_product_milk_2_img12"
+                                src="image/avocado-1287100_1280-removebg-preview.png" alt="milk" style="width: 90%">
+                        </div>
+                        <div class="popup-content12">
+                            <a class="close-btn12" href="#">&times;</a>
+                            <h1 class="popup-h1-12">Avocado</h1>
+                            <p class="popup-content-p12">100g = RS.150.00</p>
+                            <div class="popup-input12">
+                                Grams : <input type="number" id="avacado-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn12" id="avacado" data-product-name="Avocado"
+                                data-product-price="150"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Venue and dscription vegetables-->
+    <section class="venues_vegetables">
+        <h1 class="venues_vegetables_h1">
+            OUR VENUS
+        </h1>
+        <section class="intro_home">
+                <h1 class="intro_home_h1">
+                    LOCAL FRAMS
+                </h1>
+                <p class="intro_home_para">
+                    Local farms supply fresh, seasonal vegetables to nearby supermarkets.
+                    These farms often have direct partnerships with the stores, ensuring quick delivery and supporting
+                    the local economy. This approach provides customers with high-quality produce while reducing
+                    transportation time and costs.
+                </p>
+
+                <img class="intro_home-img" src="image/localfarm.jpeg" alt="backgroud transparetn" style="width: 100%;">
+        </section>
+        <section class="intro_home">
+                <h1 class="intro_home_h1">
+                    WHOLESALE PRODUCE MARKETS
+                </h1>
+                <p class="intro_home_para">
+                    Wholesale produce markets aggregate vegetables from various growers, offering a wide range of
+                    options in large quantities. Supermarkets source from these markets to meet their diverse and
+                    consistent supply needs. Examples include large markets like the Hunts Point Produce Market in New
+                    York City.
+
+
+                </p>
+
+                <img class="intro_home-img" src="image/WholesaleProduceMarkets.jpeg" alt="backgroud transparetn"
+                    style="width: 100%;">
+        </section>
+        <section class="intro_home">
+                <h1 class="intro_home_h1">
+                    AGRICULTURAL COOPERATIVES & DISTRIBUTION CENTER
+                </h1>
+                <p class="intro_home_para">
+                    Agricultural cooperatives are groups of farmers who combine their resources to market and
+                    distribute their produce more effectively. Distribution centers handle the logistics of storing
+                    and transporting vegetables from farms to supermarkets, ensuring fresh and efficiently delivered
+                    produce.
+                    Major grocery chains often operate their own distribution networks to streamline this process.
+                </p>
+
+                <img class="intro_home-img" src="image/AgriculturalCooperativesandDistributionCenters-.webp"
+                    alt="backgroud transparetn" style="width: 100%;">
+        </section>
+    </section>
+    <script src="script/dairy.js"></script>
+    <!--creating footer-->
+
+    <!-- www.keellssuper.com. (n.d.). Keells Online. [online] Available at: https://www.keellssuper.com/productDetail?itemcode=91287&Munchee_Super_Cream_Cracker_490g [Accessed 10 April. 2024]
+        en.wikipedia.org. (n.d.). grocies supermarket web - Search results - Wikipedia. [online] Available at: https://en.wikipedia.org/w/index.php?search=grocies+supermarket+web+&title=Special%3ASearch&ns0=1 [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Cargills Online - Sri Lanka’s Freshest Online Grocery Store. [online] Available at: https://cargillsonline.com/?utm_source=Sprig&utm_medium=Google+Ads&gad_source=1&gclid=EAIaIQobChMIhNLD0YfohgMVXqNmAh1aKQHlEAAYASAAEgJLsvD_BwE [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Vegetables. [online] Available at: https://cargillsonline.com/Product/Vegetables?IC=MjM=&NC=VmVnZXRhYmxlcw==
+        uatapp.cargillsonline.com. (n.d.). Dairy. [online] Available at: https://cargillsonline.com/Product/Dairy?IC=Ng==&NC=RGFpcnk=
+        Supiripola (n.d.). Lanka Sathosa Onlne Shopping | Daily Essentials. [online] Lanka Sathosa Onlne Shopping | Daily Essentials. Available at: https://www.lankasathosa.lk/
+        www.lankasathosa.lk. (n.d.). Lanka Sathosa. [online] Available at: https://www.lankasathosa.lk/shop?category=personal-care [Accessed 17 April. 2024]
+        Google. (2024). Search results for vegetables. Available at: https://www.google.com/search?q=vegetables (Accessed: 17 may 2024)
+        Google. (2024). Search results for cosmetics. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for dairy products. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for supermarket shopping images. Available at: [URL of the specific webpage where images are hosted] (Accessed: 19 April 2024)
+        Google. (2024). Search results for creative shopping logos. Available at: [URL of the specific webpage where logos are hosted] (Accessed: 21 April 2024)
+        Pixabay. (2024). Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ (Accessed: 21 April 2024)
+        Pixabay, 2024. Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ [Accessed 21 April 2024]
+        Pixabay, 2024. Milk images. Available at: https://pixabay.com/images/search/milk/ [Accessed 21 April 2024]
+        Pixabay, 2024. Cheese images. Available at: https://pixabay.com/images/search/cheese/ [Accessed 21 April 2024]
+        Pixabay, 2024. Yogurt images. Available at: https://pixabay.com/images/search/yogurt/ [Accessed 21 April 2024]
+        Pixabay, 2024. Butter images. Available at: https://pixabay.com/images/search/butter/ [Accessed 21 April 2024]
+        Keells Super, 2024. Keells Super home page. Available at: https://www.keellssuper.com/home [Accessed 22 April 2024]-->
+
+    <footer>
+        <section class="booking_page_footer">
+            <section class="footer_flex">
+                <section class="footer_infor">
+                    <p>GROCIES SUPERMARKET<br> 70/27, Obesekara Pura Mawatha,<br> Rajagiriya, Sri Lanka.</p><br>
+                    <a href="tel:+94112545422">+94 112 545 422</a><br><br>
+                    <a href="mailto:infor@therimbariohotel.com">Inquiries: infor@grociessupermarket.com</a><br>
+                    <a href="mailto:infor@therimbariohotel.com">Reservations:
+                        reservations@grociessupermarket.com</a><br><br>
+                </section>
+            </section>
+        </section>
+    </footer>
+
+
+    <script src="script/searchBar.js"></script>
+</body>
+
+</html>

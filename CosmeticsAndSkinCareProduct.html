@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Grocies Supermarket" content="width=device-width, initial-scale=1.0">
+    <title>Grocies Supermarket</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/1-removebg-preview.png">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <!-- Navigation bar , logo & search bar -->
+    <header>
+        <section class="header_main">
+            <nav class="bar">
+                <a href="index.html">
+                    <img class="logoimg" src="image/new_logo_-removebg-preview.png" alt="logo" width="150" height="110">
+                </a>
+                <div class="sreach__nav">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn1">
+                        MENU
+                    </label>
+                    <ul class="nav-links">
+                        <li class="nav-link"><a href="index.html"> <b>Home</b></a></li>
+                        <li class="nav-link"><a href="about.html"><b>About Us</b></a></li>
+                        <li class="nav-link product"><b>Products</b>
+                            <ul class="dropdown">
+                                <li class="nav-link"><a href="dairy_product.html"><b>Dairy Products</b></a></li>
+                                <li class="nav-link"><a href="fruit.html"><b>Fruits</b> </a></li>
+                                <li class="nav-link"><a href="meatNseafood.html"><b>Meat and Sea food</b></a></li>
+                                <li class="nav-link"><a href="bakingNcooking.html"><b>Baking and Cooking
+                                            Ingredients</b></a></li>
+                                <li class="nav-link"><a href="vegetables.html"><b>Vegetables Products</b></a></li>
+                                <li class="nav-link"><a href="CosmeticsAndSkinCareProduct.html"><b>Cosmetics & Skin care
+                                            product</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link"><a href="loyalty_registation.html"><b>Loyalty Rgistation</b></a></li>
+                    </ul>
+                    <br>
+                    <div class="search">
+                        <input type="text" placeholder=Search>
+                        <a href="#">
+                            <i class="fas fa-search "></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="cart" id="cart">
+                    <a href="cart.html">
+                        <img src="image/cart_new.png" width="40" height="36" alt="mainImage">
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <section class="cosmatics_main_image">
+        <div class="cosmatics_main_text">
+            <div class="cosmatics_small">
+                <P>come & buy </P>
+            </div>
+            <div class="cosmatics_large">
+                COSMATICS & SKIN CARE PRODUCTS
+            </div>
+            <div class="cosmatics_intro_para">
+                <p>JUST FOR YOU !</p>
+            </div>
+            <section class="dairymainimagesection">
+                <img class="dairymainimage" src="image/cosmaticsmaincopy.jpg" alt="dairy image">
+            </section>
+        </div>
+    </section>
+    <!--skin care product section-->
+    <section class="skin_paroducts">
+        <div class="skin_h1_para">
+            <h1 class="skin_product_h1">
+                Skin Care
+            </h1>
+            <p class="skin_product_para">
+                kincare production offers a curated selection of essential skincare items like cleansers,
+                moisturizers, and serums, catering to diverse skin types and needs. Conveniently located alongside
+                groceries, these products promote healthy skin maintenance for shoppers.
+            </p>
+        </div>
+        <table class="skin_care_production">
+            <thead>
+                <th class="skin_table">
+                    <div class="box1">
+                        <a href="#popup-box1">
+                            <figure class="skin_product_1_figure">
+                                <img class="skin_product_1_img" src="image/sakin_care_product_1-removebg-preview.png"
+                                    alt="skin care " style="width: 30%;">
+                                <figcaption class="skin_product_1_figcap_h1">
+                                    <p class="diary_product_1_figcap_para">
+                                        Acid
+                                    </p>
+                                    <p class="skin_product_1_figcap_para">
+                                        Rs.750.00
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div id="popup-box1" class="modal1">
+                        <div class="content1">
+                            <div class="popup-img1">
+                                <img class="diary_product_milk_2_img1"
+                                    src="image/sakin_care_product_1-removebg-preview.png" alt="milk"
+                                    style="width: 90%;">
+                            </div>
+                            <div class="popup-content1">
+                                <a class="close-btn1" href="#">&times;</a>
+                                <p class="popup-h1-1">Acid</p>
+                                <p class="popup-content-p1">1 bottle = RS.750.00</p>
+                                <div class="popup-input1">
+                                    Bottels : <input type="number" id="Acid-qty" class="quantity"
+                                        placeholder="enter liters">
+                                </div>
+                                <button class="popup-btn1" id="Acid" data-product-name="Acid" data-product-price="750">
+                                    Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th class="skin_table">
+                    <div class="box2">
+                        <a href="#popup-box2">
+                            <figure class="skin_product_1_figure">
+                                <img class="skin_product_1_img" src="image/skincare_product_2-removebg-preview.png"
+                                    alt="skin care " style="width: 30%;">
+                                <figcaption class="skin_product_1_figcap_h1">
+                                    <p class="diary_product_2_figcap_para">
+                                        The ordinary
+                                    </p>
+                                    <p class="skin_product_2_figcap_para">
+                                        Rs.1250.00
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div id="popup-box2" class="modal2">
+                        <div class="content2">
+                            <div class="popup-img2">
+                                <img class="diary_product_milk_2_img"
+                                    src="image/skincare_product_2-removebg-preview.png" alt="milk" style="width: 90%;">
+                            </div>
+                            <div class="popup-content2">
+                                <a class="close-btn2" href="#">&times;</a>
+                                <p class="popup-h1-2">The ordinary</p>
+                                <p class="popup-content-p2">1 Bottle = RS.1250.00</p>
+                                <div class="popup-input2">
+                                    Bottels : <input type="number" id="ordinary-qty" class="quantity"
+                                        placeholder="enter liters">
+                                </div>
+                                <button class="popup-btn2" id="ordinary" data-product-name="The ordinary"
+                                    data-product-price="1250"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th class="skin_table">
+                    <div class="box3">
+                        <a href="#popup-box3">
+                            <figure class="skin_product_1_figure">
+                                <img class="skin_product_1_img" src="image/sakin_care_product_3-removebg-preview.png"
+                                    alt="skin care " style="width: 30%;">
+                                <figcaption class="skin_product_1_figcap_h1">
+                                    <p class="diary_product_3_figcap_para">
+                                        Jasmin
+                                    </p>
+                                    <p class="skin_product_3_figcap_para">
+                                        Rs.750.00
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div id="popup-box3" class="modal3">
+                        <div class="content3">
+                            <div class="popup-img3">
+                                <img class="diary_product_milk_2_img3"
+                                    src="image/sakin_care_product_3-removebg-preview.png" alt="milk"
+                                    style="width: 90%;">
+                            </div>
+                            <div class="popup-content3">
+                                <a class="close-btn3" href="#">&times;</a>
+                                <p class="popup-h1-3">Jasmin</p>
+                                <p class="popup-content-p3">1 bottels = RS.750.00</p>
+                                <div class="popup-input3">
+                                    Bottels : <input type="number" id="jasmin-qty" class="quantity"
+                                        placeholder="enter liters">
+                                </div>
+                                <button class="popup-btn3" id="jasmin" data-product-name="Jasmin"
+                                    data-product-price="750"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th class="skin_table">
+                    <div class="box4">
+                        <a href="#popup-box4">
+                            <figure class="skin_product_1_figure">
+                                <img class="skin_product_1_img" src="image/sakin_care_product_4-removebg-preview.png"
+                                    alt="skin care" style="width: 30%;">
+                                <figcaption class="skin_product_1_figcap_h1">
+                                    <p class="diary_product_4_figcap_para">
+                                        Bliss
+                                    </p>
+                                    <p class="skin_product_4_figcap_para">
+                                        Rs.1050.00
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div id="popup-box4" class="modal4">
+                        <div class="content4">
+                            <div class="popup-img4">
+                                <img class="diary_product_milk_2_img4"
+                                    src="image/sakin_care_product_4-removebg-preview.png" alt="milk"
+                                    style="width: 90%;">
+                            </div>
+                            <div class="popup-content4">
+                                <a class="close-btn4" href="#">&times;</a>
+                                <p class="popup-h1-4">Bliss</p>
+                                <p class="popup-content-p4">1 bottel = RS.1050.00</p>
+                                <div class="popup-input4">
+                                    Bottels : <input type="number" id="bliss-qty" class="quantity"
+                                        placeholder="enter liters">
+                                </div>
+                                <button class="popup-btn4" id="bliss" data-product-name="Bliss"
+                                    data-product-price="1050"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+            </thead>
+        </table>
+    </section>
+    <!--hair care product section-->
+    <section class="skin_paroducts">
+        <div class="skin_h1_para">
+            <h1 class="skin_product_h1">
+                Hair Care
+            </h1>
+            <p class="skin_product_para">
+                Hair care production involves developing, manufacturing, and packaging products such as shampoos,
+                conditioners, and styling treatments. Formulations are crafted with researched ingredients, ensuring
+                quality and efficacy to meet diverse consumer needs and trends.
+        </div>
+        <table class="skin_care_production">
+            <thead>
+                <th class="skin_table">
+                    <div class="box5">
+                        <a href="#popup-box5">
+                            <figure class="skin_product_1_figure">
+                                <img class="skin_product_1_img" src="image/hair_product_2-removebg-preview.png"
+                                    alt="hair care " style="width: 45%;">
+                                <figcaption class="skin_product_1_figcap_h1">
+                                    <p class="diary_product_1_figcap_para">
+                                        Gisou
+                                    </p>
+                                    <p class="skin_product_1_figcap_para">
+                                        Rs.600.00
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div id="popup-box5" class="modal5">
+                        <div class="content5">
+                            <div class="popup-img5">
+                                <img class="diary_product_milk_2_img5" src="image/hair_product_2-removebg-preview.png"
+                                    alt="milk" style="width: 90%;">
+                            </div>
+                            <div class="popup-content5">
+                                <a class="close-btn5" href="#">&times;</a>
+                                <p class="popup-h1-5">Gisou</p>
+                                <p class="popup-content-p5">1 Bottle = RS.600.00</p>
+                                <div class="popup-input5">
+                                    Bottels : <input type="number" id="gisou-qty" class="quantity"
+                                        placeholder="enter liters">
+                                </div>
+                                <button class="popup-btn5" id="gisou" data-product-name="Gisou"
+                                    data-product-price="600"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th class="skin_table">
+                    <div class="box6">
+                        <a href="#popup-box6">
+                            <figure class="skin_product_1_figure">
+                                <img class="skin_product_1_img" src="image/hair_product_2_2-removebg-preview.png"
+                                    alt="hair care " style="width: 40%;">
+                                <figcaption class="skin_product_1_figcap_h1">
+                                    <p class="diary_product_2_figcap_para">
+                                        Gisou hair cream
+                                    </p>
+                                    <p class="skin_product_2_figcap_para">
+                                        Rs.1250.00
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div id="popup-box6" class="modal6">
+                        <div class="content6">
+                            <div class="popup-img6">
+                                <img class="diary_product_milk_2_img6" src="image/hair_product_2_2-removebg-preview.png"
+                                    alt="milk" style="width: 90%;">
+                            </div>
+                            <div class="popup-content6">
+                                <a class="close-btn6" href="#">&times;</a>
+                                <p class="popup-h1-6">Gisou hair cream</p>
+                                <p class="popup-content-p6">1 bottle = RS.1250.00</p>
+                                <div class="popup-input6">
+                                    Bottels : <input type="number" id="gisou-hair-qty" class="quantity"
+                                        placeholder="enter liters">
+                                </div>
+                                <button class="popup-btn6" id="gisou-hair" data-product-name="Gisou hair cream"
+                                    data-product-price="1250"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th class="skin_table">
+                    <div class="box7">
+                        <a href="#popup-box7">
+                            <figure class="skin_product_1_figure">
+                                <img class="skin_product_1_img" src="image/hair_product_3__copy-removebg-preview.png"
+                                    alt="hair care " style="width: 30%;">
+                                <figcaption class="skin_product_1_figcap_h1">
+                                    <p class="diary_product_3_figcap_para">
+                                        The ordinary
+                                    </p>
+                                    <p class="skin_product_3_figcap_para">
+                                        Rs.900.00
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div id="popup-box7" class="modal7">
+                        <div class="content7">
+                            <div class="popup-img7">
+                                <img class="diary_product_milk_2_img7"
+                                    src="image/hair_product_3__copy-removebg-preview.png" alt="milk"
+                                    style="width: 90%;">
+                            </div>
+                            <div class="popup-content7">
+                                <a class="close-btn7" href="#">&times;</a>
+                                <p class="popup-h1-7">The ordinary</p>
+                                <p class="popup-content-p7">1 bottel = RS.900.00</p>
+                                <div class="popup-input7">
+                                    Bottels : <input type="number" id="the-ordinary-qty" class="quantity"
+                                        placeholder="enter liters">
+                                </div>
+                                <button class="popup-btn7" id="the-ordinary" data-product-name="The ordinary"
+                                    data-product-price="900"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th class="skin_table">
+                    <div class="box8">
+                        <a href="#popup-box8">
+                            <figure class="skin_product_4_figure">
+                                <img class="skin_product_1_img" src="image/hair_products-removebg-preview.png"
+                                    alt="hair care " style="width: 80%;">
+                                <figcaption class="skin_product_1_figcap_h1">
+                                    <p class="diary_product_4_figcap_para">
+                                        Lorel
+                                    </p>
+                                    <p class="skin_product_4_figcap_para">
+                                        Rs.1250.00
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div id="popup-box8" class="modal8">
+                        <div class="content8">
+                            <div class="popup-img8">
+                                <img class="diary_product_milk_2_img8" src="image/hair_products-removebg-preview.png"
+                                    alt="milk" style="width: 90%;">
+                            </div>
+                            <div class="popup-content8">
+                                <a class="close-btn8" href="#">&times;</a>
+                                <p class="popup-h1-8">Lorel</p>
+                                <p class="popup-content-p8">1 bottel = RS.1250.00</p>
+                                <div class="popup-input8">
+                                    Bottels : <input type="number" id="lorel-qty" class="quantity"
+                                        placeholder="enter liters">
+                                </div>
+                                <button class="popup-btn8" id="lorel" data-product-name="Lorel"
+                                    data-product-price="1250"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+            </thead>
+        </table>
+    </section>
+    <script src="script/dairy.js"></script>
+    <!-- create footer -->
+
+    <!-- www.keellssuper.com. (n.d.). Keells Online. [online] Available at: https://www.keellssuper.com/productDetail?itemcode=91287&Munchee_Super_Cream_Cracker_490g [Accessed 10 April. 2024]
+        en.wikipedia.org. (n.d.). grocies supermarket web - Search results - Wikipedia. [online] Available at: https://en.wikipedia.org/w/index.php?search=grocies+supermarket+web+&title=Special%3ASearch&ns0=1 [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Cargills Online - Sri Lanka’s Freshest Online Grocery Store. [online] Available at: https://cargillsonline.com/?utm_source=Sprig&utm_medium=Google+Ads&gad_source=1&gclid=EAIaIQobChMIhNLD0YfohgMVXqNmAh1aKQHlEAAYASAAEgJLsvD_BwE [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Vegetables. [online] Available at: https://cargillsonline.com/Product/Vegetables?IC=MjM=&NC=VmVnZXRhYmxlcw==
+        uatapp.cargillsonline.com. (n.d.). Dairy. [online] Available at: https://cargillsonline.com/Product/Dairy?IC=Ng==&NC=RGFpcnk=
+        Supiripola (n.d.). Lanka Sathosa Onlne Shopping | Daily Essentials. [online] Lanka Sathosa Onlne Shopping | Daily Essentials. Available at: https://www.lankasathosa.lk/
+        www.lankasathosa.lk. (n.d.). Lanka Sathosa. [online] Available at: https://www.lankasathosa.lk/shop?category=personal-care [Accessed 17 April. 2024]
+        Google. (2024). Search results for vegetables. Available at: https://www.google.com/search?q=vegetables (Accessed: 17 may 2024)
+        Google. (2024). Search results for cosmetics. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for dairy products. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for supermarket shopping images. Available at: [URL of the specific webpage where images are hosted] (Accessed: 19 April 2024)
+        Google. (2024). Search results for creative shopping logos. Available at: [URL of the specific webpage where logos are hosted] (Accessed: 21 April 2024)
+        Pixabay. (2024). Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ (Accessed: 21 April 2024)
+        Pixabay, 2024. Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ [Accessed 21 April 2024]
+        Pixabay, 2024. Milk images. Available at: https://pixabay.com/images/search/milk/ [Accessed 21 April 2024]
+        Pixabay, 2024. Cheese images. Available at: https://pixabay.com/images/search/cheese/ [Accessed 21 April 2024]
+        Pixabay, 2024. Yogurt images. Available at: https://pixabay.com/images/search/yogurt/ [Accessed 21 April 2024]
+        Pixabay, 2024. Butter images. Available at: https://pixabay.com/images/search/butter/ [Accessed 21 April 2024]
+        Keells Super, 2024. Keells Super home page. Available at: https://www.keellssuper.com/home [Accessed 22 April 2024]-->
+
+    <footer>
+        <section class="booking_page_footer">
+            <section class="footer_flex">
+                <section class="footer_infor">
+                    <p>GROCIES SUPERMARKET<br> 70/27, Obesekara Pura Mawatha,<br> Rajagiriya, Sri Lanka.</p><br>
+                    <a href="tel:+94112545422">+94 112 545 422</a><br><br>
+                    <a href="mailto:infor@therimbariohotel.com">Inquiries: infor@grociessupermarket.com</a><br>
+                    <a href="mailto:infor@therimbariohotel.com">Reservations:
+                        reservations@grociessupermarket.com</a><br><br>
+                </section>
+            </section>
+        </section>
+    </footer>
+
+    <script src="script/searchBar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Grocies Supermarket" content="width=device-width, initial-scale=1.0">
+    <title>Grocies Supermarket</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/1-removebg-preview.png">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <!-- Navigation bar , logo & search bar -->
+    <header>
+        <section class="header_main">
+            <nav class="bar">
+                <a href="index.html">
+                    <img class="logoimg" src="image/new_logo_-removebg-preview.png" alt="logo" width="150" height="110">
+                </a>
+                <div class="sreach__nav">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn1">
+                        MENU
+                    </label>
+                    <ul class="nav-links">
+                        <li class="nav-link"><a href="index.html"> <b>Home</b></a></li>
+                        <li class="nav-link"><a href="about.html"><b>About Us</b></a></li>
+                        <li class="nav-link product"><b>Products</b>
+                            <ul class="dropdown">
+                                <li class="nav-link"><a href="dairy_product.html"><b>Dairy Products</b></a></li>
+                                <li class="nav-link"><a href="fruit.html"><b>Fruits</b> </a></li>
+                                <li class="nav-link"><a href="meatNseafood.html"><b>Meat and Sea food</b></a></li>
+                                <li class="nav-link"><a href="bakingNcooking.html"><b>Baking and Cooking
+                                            Ingredients</b></a></li>
+                                <li class="nav-link"><a href="vegetables.html"><b>Vegetables Products</b></a></li>
+                                <li class="nav-link"><a href="CosmeticsAndSkinCareProduct.html"><b>Cosmetics & Skin care
+                                            product</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link"><a href="loyalty_registation.html"><b>Loyalty Rgistation</b></a></li>
+                    </ul>
+                    <br>
+                    <div class="search">
+                        <input type="text" placeholder=Search>
+                        <a href="#">
+                            <i class="fas fa-search "></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="cart" id="cart">
+                    <a href="cart.html" target="_blank">
+                        <img src="image/cart_new.png" width="40" height="36" alt="mainImage">
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!--dairy main image section-->
+    <section class="diary_main_image">
+        <div class="diary_main_text">
+            <div class="diary_small">
+                <P>come & buy </P>
+            </div>
+            <div class="diary_large">
+                DIARY PRODUCTS
+            </div>
+            <div class="diary_intro_para">
+                <p>JUST FOR YOU !</p>
+            </div>
+            <section class="dairymainimagesection">
+                <img class="dairymainimage" src="image/diary_main.jpeg" alt="dairy image">
+            </section>
+        </div>
+    </section>
+    <!--milk product section-->
+    <section class="diary_paroducts">
+        <div class="diary_milk_h1_para">
+            <h1 class="diary_product_h1">
+                Milk
+            </h1>
+            <p class="diary_product_para">
+                Milk is a staple dairy product available in various forms such as whole milk,
+                skimmed milk, and semi-skimmed milk. It's a rich source of calcium, protein, and essential
+                vitamins like vitamin D.
+            </p>
+        </div>
+        <div class="diary_products_milk">
+            <div class="diary_product_milk_1">
+                <div class="box1 product">
+                    <a href="#popup-box1">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/diary_product_milk_1-removebg-preview.png"
+                                alt="milk" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_para h1">
+                                    Cow's Milk
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.500.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box1" class="modal1">
+                    <div class="content1">
+                        <div class="popup-img1">
+                            <img class="diary_product_milk_2_img1" src="image/diary_product_milk_1-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content1">
+                            <a class="close-btn1" href="#">&times;</a>
+                            <h1 class="popup-h1-1">Cow's milk</h1>
+                            <p class="popup-content-p1">1l = RS.500.00</p>
+                            <div class="popup-input1">
+                                Liters : <input type="number" id="cow-milk-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <div>
+                                <button class="popup-btn1" id="cow-milk" data-product-name="Cow's milk"
+                                    data-product-price="500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box2 product">
+                    <a href="#popup-box2">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/diary_product_milk_2_-removebg-preview.png"
+                                alt="milk" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_h1 h1">
+                                    Goat's Milk
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.800.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box2" class="modal2">
+                    <div class="content2">
+                        <div class="popup-img2">
+                            <img class="diary_product_milk_2_img" src="image/diary_product_milk_2_-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content2">
+                            <a class="close-btn2" href="#">&times;</a>
+                            <h1 class="popup-h1-2">Goat's Milk</h1>
+                            <p class="popup-content-p2">1l = RS.800.00</p>
+                            <div class="popup-input2" id="quantityEnterd">
+                                Liters : <input type="number" id="goat-milk-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn2" id="goat-milk" data-product-name="Goat's milk"
+                                data-product-price="800"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box3 product">
+                    <a href="#popup-box3">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_3_img" src="image/diary_product_3-removebg-preview.png"
+                                alt="milk" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1 h1 ">
+                                    Sheep's Milk
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.850.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box3" class="modal3">
+                    <div class="content3">
+                        <div class="popup-img3">
+                            <img class="diary_product_milk_2_img3" src="image/diary_product_3-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content3">
+                            <a class="close-btn3" href="#">&times;</a>
+                            <h1 class="popup-h1-3">Sheep's Milk</h1>
+                            <p class="popup-content-p3">1l = RS.850.00</p>
+                            <div class="popup-input3">
+                                Liters : <input type="number" id="sheep-milk-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn3" id="sheep-milk" data-product-name="Sheep's Milk"
+                                data-product-price="850"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box4 product">
+                    <a href="#popup-box4">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/diary_product_milk_4-removebg-preview.png" alt="milk" style="width: 40%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1 h1">
+                                    Buffalo Milk
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.1550.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box4" class="modal4">
+                    <div class="content4">
+                        <div class="popup-img4">
+                            <img class="diary_product_milk_2_img4" src="image/diary_product_milk_4-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content4">
+                            <a class="close-btn4" href="#">&times;</a>
+                            <h1 class="popup-h1-4">Buffalo milk</h1>
+                            <p class="popup-content-p4">1l = RS.1550.00</p>
+                            <div class="popup-input4">
+                                Liters : <input type="number" id="buffalo-milk-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn4" id="buffalo-milk" data-product-name="Buffalo milk"
+                                data-product-price="1550"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--cheese product section-->
+    <section class="diary_paroducts">
+        <div class="diary_milk_h1_para">
+            <h1 class="diary_product_h1">
+                Cheese
+            </h1>
+            <p class="diary_product_para">
+                Cheese comes in numerous varieties, each with its own taste, texture, and aroma. Common types include
+                cheddar, mozzarella, Swiss, and brie. Cheese is a versatile ingredient used in sandwiches, salads, pasta
+                dishes, and more.
+            </p>
+        </div>
+        <div class="diary_products_milk">
+            <div class="diary_product_milk_1">
+                <div class="box5 product">
+                    <a href="#popup-box5">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/cheese_image_1-removebg-preview.png"
+                                alt="Cheese" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_para h1">
+                                    Parmesan
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.450.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box5" class="modal5">
+                    <div class="content5">
+                        <div class="popup-img5">
+                            <img class="diary_product_milk_2_img5" src="image/cheese_image_1-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content5">
+                            <a class="close-btn5" href="#">&times;</a>
+                            <h1 class="popup-h1-5">Parmesan</h1>
+                            <p class="popup-content-p5">1 packet = RS.450.00</p>
+                            <div class="popup-input5">
+                                Quantity : <input type="number" id="parmesan-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn5" id="parmesan" data-product-name="Parmesan"
+                                data-product-price="450"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box6 product">
+                    <a href="#popup-box6">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/cheese_image_2-removebg-preview.png"
+                                alt="Cheese" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_h1 h1">
+                                    Kotmale cheese
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.200.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box6" class="modal6">
+                    <div class="content6">
+                        <div class="popup-img6">
+                            <img class="diary_product_milk_2_img6" src="image/cheese_image_2-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content6">
+                            <a class="close-btn6" href="#">&times;</a>
+                            <h1 class="popup-h1-6">Kotmale cheese</h1>
+                            <p class="popup-content-p6">1 packet = RS.200.00</p>
+                            <div class="popup-input6">
+                                Quantity : <input type="number" id="kotmale-cheese-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn6" id="kotmale-cheese" data-product-name="Kotmale cheese"
+                                data-product-price="200"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box7 product">
+                    <a href="#popup-box7">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_3_img" src="image/cheese_image_3_-removebg-preview.png"
+                                alt="Cheese" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1 h1">
+                                    Mozzarella
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.300.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box7" class="modal7">
+                    <div class="content7">
+                        <div class="popup-img7">
+                            <img class="diary_product_milk_2_img7" src="image/cheese_image_3_-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content7">
+                            <a class="close-btn7" href="#">&times;</a>
+                            <h1 class="popup-h1-7">Mozzarella</h1>
+                            <p class="popup-content-p7">1 packet = RS.300.00</p>
+                            <div class="popup-input7">
+                                Quantity : <input type="number" id="mozzarella-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn7" id="mozzarella" data-product-name="Mozzarella"
+                                data-product-price="300"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box8 product">
+                    <a href="#popup-box8">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/cheese_image_4-removebg-preview.png" alt="Cheese"
+                                class="diary_product_milk_3_img" style="width: 60%">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1 h1">
+                                    Brie
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.750.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box8" class="modal8">
+                    <div class="content8">
+                        <div class="popup-img8">
+                            <img class="diary_product_milk_2_img8" src="image/cheese_image_4-removebg-preview.png" alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content8">
+                            <a class="close-btn8" href="#">&times;</a>
+                            <h1 class="popup-h1-8">Brie</h1>
+                            <p class="popup-content-p8">1 packet = RS.750.00</p>
+                            <div class="popup-input8">
+                                Quantity : <input type="number" id="brie-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn8" id="brie" data-product-name="Brie" data-product-price="750"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Yogurt product section-->
+    <section class="diary_paroducts">
+        <div class="diary_milk_h1_para">
+            <h1 class="diary_product_h1">
+                Yogurt
+            </h1>
+            <p class="diary_product_para">
+                Yogurt is a fermented dairy product known for its creamy texture and tangy flavor. It contains
+                probiotics,
+                which are beneficial bacteria that promote gut health. Yogurt can be enjoyed plain or flavored and is
+                often
+                used in breakfast dishes, smoothies, and desserts.
+            </p>
+        </div>
+        <div class="diary_products_milk">
+            <div class="diary_product_milk_1">
+                <div class="box9 product">
+                    <a href="#popup-box9">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/Yogurt_image_1_-removebg-preview.png"
+                                alt="Yogurt" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_para h1">
+                                    Nounos Yogurt
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.150.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box9" class="modal9">
+                    <div class="content9">
+                        <div class="popup-img9">
+                            <img class="diary_product_milk_2_img9" src="image/Yogurt_image_1_-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content9">
+                            <a class="close-btn9" href="#">&times;</a>
+                            <h1 class="popup-h1-9">Nounos Yogurt</h1>
+                            <p class="popup-content-p9">1 cup = RS.150.00</p>
+                            <div class="popup-input9">
+                                Quantity : <input type="number" id="nounos-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn9" id="nounos" data-product-name="Nounos Yogurt"
+                                data-product-price="150"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box10 product">
+                    <a href="#popup-box10">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/Yogurt_image_2-removebg-preview.png"
+                                alt="Yogurt" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_h1 h1">
+                                    Stonyfield Yogurt
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.200.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box10" class="modal10">
+                    <div class="content10">
+                        <div class="popup-img10">
+                            <img class="diary_product_milk_2_img10" src="image/Yogurt_image_2-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content10">
+                            <a class="close-btn10" href="#">&times;</a>
+                            <h1 class="popup-h1-10">Stonyfield Yogurt</h1>
+                            <p class="popup-content-p10">1 cup = RS.200.00</p>
+                            <div class="popup-input10">
+                                Quantity : <input type="number" id="stonyfield-yogurt-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn10" id="stonyfield-yogurt" data-product-name="Stonyfield Yogurt"
+                                data-product-price="200"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box11 product">
+                    <a href="#popup-box11">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_3_img" src="image/Yogurt_image_3_-removebg-preview(1).png"
+                                alt="Yogurt" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1 h1">
+                                    Fage Yogurt
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.75.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box11" class="modal11">
+                    <div class="content11">
+                        <div class="popup-img11">
+                            <img class="diary_product_milk_2_img11" src="image/Yogurt_image_3_-removebg-preview(1).png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content11">
+                            <a class="close-btn11" href="#">&times;</a>
+                            <h1 class="popup-h1-11">Fage Yogurt</h1>
+                            <p class="popup-content-p11">1 cup = RS.75.00</p>
+                            <div class="popup-input11">
+                                Quantity : <input type="number" id="fage-yogurt-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn11" id="fage-yogurt" data-product-name="Fage Yogurt"
+                                data-product-price="75"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box12 product">
+                    <a href="#popup-box12">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/Yogurt_image_4-removebg-preview(1).png" alt="Yogurt"
+                                class="diary_product_milk_3_img" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1 h1">
+                                    Two Good Yogurt
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.250.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box12" class="modal12">
+                    <div class="content12">
+                        <div class="popup-img12">
+                            <img class="diary_product_milk_2_img12" src="image/Yogurt_image_4-removebg-preview(1).png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content12">
+                            <a class="close-btn12" href="#">&times;</a>
+                            <h1 class="popup-h1-12">Two Good Yogurt</h1>
+                            <p class="popup-content-p12">1 cup = RS.150.00</p>
+                            <div class="popup-input12">
+                                Quantity : <input type="number" id="two-good-yogurt-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn12" id="two-good-yogurt" data-product-name="Two Good Yogurt"
+                                data-product-price="150"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Butter product section-->
+    <section class="diary_paroducts">
+        <div class="diary_milk_h1_para">
+            <h1 class="diary_product_h1">
+                Butter
+            </h1>
+            <p class="diary_product_para">
+                Butter is a dairy product made from churned cream, typically from cow's milk. It's widely used
+                in cooking and baking to add flavor, richness, and moisture to dishes. Butter comes in salted and
+                unsalted varieties.
+            </p>
+        </div>
+        <div class="diary_products_milk">
+            <div class="diary_product_milk_1">
+                <div class="box13 product">
+                    <a href="#popup-box13">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/Butter_image_1_-removebg-preview.png"
+                                alt="Butter" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_para h1">
+                                    Roasted Garlic Butter
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.450.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box13" class="modal13">
+                    <div class="content13">
+                        <div class="popup-img13">
+                            <img class="diary_product_milk_2_img13" src="image/Butter_image_1_-removebg-preview.png" alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content13">
+                            <a class="close-btn13" href="#">&times;</a>
+                            <h1 class="popup-h1-13">Roasted Garlic Butter</h1>
+                            <p class="popup-content-p13">1 = RS.450.00</p>
+                            <div class="popup-input13">
+                                Quantity : <input type="number" id="garlic-butter-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn13" id="garlic-butter" data-product-name="Roasted Garlic Butter" data-product-price="450"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box14 product">
+                    <a href="#popup-box14">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/Butter_image_2-removebg-preview.png"
+                                alt="Butter" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_h1 h1">
+                                    Miyoko's Butter
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.550.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box14" class="modal14">
+                    <div class="content14">
+                        <div class="popup-img14">
+                            <img class="diary_product_milk_2_img14" src="image/Butter_image_2-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content14">
+                            <a class="close-btn14" href="#">&times;</a>
+                            <h1 class="popup-h1-14"> Miyoko's Butter</h1>
+                            <p class="popup-content-p14">1 = RS.550.00</p>
+                            <div class="popup-input14">
+                                Quantity : <input type="number" id="miyoko-butter-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn14" id="miyoko-butter" data-product-name="Miyoko's Butter"
+                                data-product-price="550"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box15 product">
+                    <a href="#popup-box15">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_3_img" src="image/Butter_image_3_-removebg-preview.png" alt="Butter" style="width: 100%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1 h1">
+                                    Lurpak Butter
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.750.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box15" class="modal15">
+                    <div class="content15">
+                        <div class="popup-img15">
+                            <img class="diary_product_milk_2_img15" src="image/Butter_image_3_-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content15">
+                            <a class="close-btn15" href="#">&times;</a>
+                            <h1 class="popup-h1-15">Lurpak Butter </h1>
+                            <p class="popup-content-p15">1 = RS.750.00</p>
+                            <div class="popup-input15">
+                                Quantity : <input type="number" id="lurpak-butter-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn15" id="lurpak-butter" data-product-name="Lurpak Butter"
+                                data-product-price="750"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box16 product">
+                    <a href="#popup-box16">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/Butter_image_4_-removebg-preview.png" alt="Butter"
+                                class="diary_product_milk_3_img" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1 h1">
+                                    Plugra Butter
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.350.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box16" class="modal16">
+                    <div class="content16">
+                        <div class="popup-img16">
+                            <img class="diary_product_milk_2_img16" src="image/Butter_image_4_-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content16">
+                            <a class="close-btn16" href="#">&times;</a>
+                            <h1 class="popup-h1-16">Plugra Butter</h1>
+                            <p class="popup-content-p16">1 = RS.350.00</p>
+                            <div class="popup-input16">
+                                Quantity : <input type="number" id="plugra-butter-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn16" id="plugra-butter" data-product-name="Plugra Butter"
+                                data-product-price="350"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/dairy.js"></script>
+    <!--footer section -->
+
+    <!-- www.keellssuper.com. (n.d.). Keells Online. [online] Available at: https://www.keellssuper.com/productDetail?itemcode=91287&Munchee_Super_Cream_Cracker_490g [Accessed 10 April. 2024]
+        en.wikipedia.org. (n.d.). grocies supermarket web - Search results - Wikipedia. [online] Available at: https://en.wikipedia.org/w/index.php?search=grocies+supermarket+web+&title=Special%3ASearch&ns0=1 [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Cargills Online - Sri Lanka’s Freshest Online Grocery Store. [online] Available at: https://cargillsonline.com/?utm_source=Sprig&utm_medium=Google+Ads&gad_source=1&gclid=EAIaIQobChMIhNLD0YfohgMVXqNmAh1aKQHlEAAYASAAEgJLsvD_BwE [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Vegetables. [online] Available at: https://cargillsonline.com/Product/Vegetables?IC=MjM=&NC=VmVnZXRhYmxlcw==
+        uatapp.cargillsonline.com. (n.d.). Dairy. [online] Available at: https://cargillsonline.com/Product/Dairy?IC=Ng==&NC=RGFpcnk=
+        Supiripola (n.d.). Lanka Sathosa Onlne Shopping | Daily Essentials. [online] Lanka Sathosa Onlne Shopping | Daily Essentials. Available at: https://www.lankasathosa.lk/
+        www.lankasathosa.lk. (n.d.). Lanka Sathosa. [online] Available at: https://www.lankasathosa.lk/shop?category=personal-care [Accessed 17 April. 2024]
+        Google. (2024). Search results for vegetables. Available at: https://www.google.com/search?q=vegetables (Accessed: 17 may 2024)
+        Google. (2024). Search results for cosmetics. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for dairy products. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for supermarket shopping images. Available at: [URL of the specific webpage where images are hosted] (Accessed: 19 April 2024)
+        Google. (2024). Search results for creative shopping logos. Available at: [URL of the specific webpage where logos are hosted] (Accessed: 21 April 2024)
+        Pixabay. (2024). Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ (Accessed: 21 April 2024)
+        Pixabay, 2024. Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ [Accessed 21 April 2024]
+        Pixabay, 2024. Milk images. Available at: https://pixabay.com/images/search/milk/ [Accessed 21 April 2024]
+        Pixabay, 2024. Cheese images. Available at: https://pixabay.com/images/search/cheese/ [Accessed 21 April 2024]
+        Pixabay, 2024. Yogurt images. Available at: https://pixabay.com/images/search/yogurt/ [Accessed 21 April 2024]
+        Pixabay, 2024. Butter images. Available at: https://pixabay.com/images/search/butter/ [Accessed 21 April 2024]
+        Keells Super, 2024. Keells Super home page. Available at: https://www.keellssuper.com/home [Accessed 22 April 2024]-->
+
+    <footer>
+        <section class="booking_page_footer">
+            <section class="footer_flex">
+                <section class="footer_infor">
+                    <p>GROCIES SUPERMARKET<br> 70/27, Obesekara Pura Mawatha,<br> Rajagiriya, Sri Lanka.</p><br>
+                    <a href="tel:+94112545422">+94 112 545 422</a><br><br>
+                    <a href="mailto:infor@therimbariohotel.com">Inquiries: infor@grociessupermarket.com</a><br>
+                    <a href="mailto:infor@therimbariohotel.com">Reservations:
+                        reservations@grociessupermarket.com</a><br><br>
+                </section>
+            </section>
+        </section>
+    </footer>
+
+    <script src="script/searchBar.js"></script>
+</body>
+
+</html>

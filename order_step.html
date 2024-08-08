@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Grocies Supermarket" content="width=device-width, initial-scale=1.0">
+    <title>Grocies Supermarket</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/1-removebg-preview.png">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+
+<body>
+    <header>
+        <section class="header_main">
+            <nav class="bar">
+                <a href="index.html">
+                    <img class="logoimg" src="image/new_logo_-removebg-preview.png" alt="logo" width="150" height="110">
+                </a>
+                <div class="sreach__nav">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn1">
+                        MENU
+                    </label>
+                    <ul class="nav-links">
+                        <li class="nav-link"><a href="index.html"> <b>Home</b></a></li>
+                        <li class="nav-link"><a href="about.html"><b>About Us</b></a></li>
+                        <li class="nav-link product"><b>Products</b>
+                            <ul class="dropdown">
+                                <li class="nav-link"><a href="dairy_product.html"><b>Dairy Products</b></a></li>
+                                <li class="nav-link"><a href="fruit.html"><b>Fruits</b> </a></li>
+                                <li class="nav-link"><a href="meatNseafood.html"><b>Meat and Sea food</b></a></li>
+                                <li class="nav-link"><a href="bakingNcooking.html"><b>Baking and Cooking
+                                            Ingredients</b></a></li>
+                                <li class="nav-link"><a href="vegetables.html"><b>Vegetables Products</b></a></li>
+                                <li class="nav-link"><a href="CosmeticsAndSkinCareProduct.html"><b>Cosmetics & Skin care
+                                            product</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link"><a href="loyalty_registation.html"><b>Loyalty Rgistation</b></a></li>
+                    </ul>
+                    <br>
+                    <div class="search">
+                        <input type="text" placeholder=Search>
+                        <a href="#">
+                            <i class="fas fa-search "></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="cart" id="cart">
+                    <a href="cart.html">
+                        <img src="image/cart_new.png" width="40" height="36" alt="mainImage">
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <div class="container">
+        <form id="form1">
+            <h1>personal details</h1>
+            Name : <input type="text" id="name1" placeholder="Name">
+            <span id="name-Error" class="errormsg"></span><br>
+            Contact : <input type="number" id="contact" placeholder="contact no">
+            <span id="contact-Error" class="errormsg"></span><br>
+            Email : <input type="email" id="email" placeholder="Email address">
+            <span id="email-Error" class="errormsg"></span><br>
+
+            <div class="btn-box">
+                <button id="next1" type="button">Next</button>
+            </div>
+        </form>
+
+        <form id="form2">
+            <h1>Payment</h1>
+            Payment method : <div><select name="payment-method" required class="payment">
+                    <option disabled value="" selected>Select Payment Method</option>
+                    <option value="credit-card">Visa</option>
+                    <option value="paypal">Master</option>
+                </select></div>
+            Card number: : <input type="number" id="cardNum" name="cardnum" required placeholder="contact no">
+            <span id="cardNum-Error" class="errormsg"></span><br>
+            CVV : <input type="text" id="CVV" name="cvv" placeholder="Email address">
+            <span id="CVV-Error" class="errormsg"></span><br>
+
+            <div class="btn-box">
+                <button id="back1" type="button">Back</button>
+                <button id="next2" type="button">Next</button>
+            </div>
+        </form>
+
+        <form id="form3">
+            <h1>Delivery details</h1>
+            Address : <input type="text" id="address" name="address" required placeholder="Name">
+            <span id="address-Error" class="errormsg"></span><br>
+            District : <input type="text" name="district" id="district" required placeholder="contact no">
+            <span id="district-Error" class="errormsg"></span><br>
+            Street : <input type="text" id="street" name="street" required placeholder="Email address">
+            <span id="street-Error" class="errormsg"></span><br>
+            <div class="btn-box">
+                <button id="back2" type="button">Back</button>
+                <button id="next3" type="button">Next</button>
+            </div>
+
+        </form>
+        <form class="form4" id="form4">
+            <h1>Grocies Supermarket</h1>
+            <table id="formCart">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="formCart-table-body">
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+            <div class="btn-box">
+                <button id="back3" type="button">Back</button>
+                <button id="submit_btn" type="button">Submit</button>
+            </div>
+        </form>
+        <form class="form5" id="form5">
+            <h1>Thank you ! </h1>
+            <p>Your oder will be deliver in next 3days </p>
+            <p id="demo"></p>
+            <div class="btn-box">
+                <a href="index.html">
+                    <button type="button">Done</button>
+                </a>
+            </div>
+
+        </form>
+        <div class="progress_container">
+            <div class="progress" id="progress"></div>
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+        </div>
+    </div>
+    <!-- create footer -->
+
+    <!-- www.keellssuper.com. (n.d.). Keells Online. [online] Available at: https://www.keellssuper.com/productDetail?itemcode=91287&Munchee_Super_Cream_Cracker_490g [Accessed 10 April. 2024]
+        en.wikipedia.org. (n.d.). grocies supermarket web - Search results - Wikipedia. [online] Available at: https://en.wikipedia.org/w/index.php?search=grocies+supermarket+web+&title=Special%3ASearch&ns0=1 [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Cargills Online - Sri Lanka’s Freshest Online Grocery Store. [online] Available at: https://cargillsonline.com/?utm_source=Sprig&utm_medium=Google+Ads&gad_source=1&gclid=EAIaIQobChMIhNLD0YfohgMVXqNmAh1aKQHlEAAYASAAEgJLsvD_BwE [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Vegetables. [online] Available at: https://cargillsonline.com/Product/Vegetables?IC=MjM=&NC=VmVnZXRhYmxlcw==
+        uatapp.cargillsonline.com. (n.d.). Dairy. [online] Available at: https://cargillsonline.com/Product/Dairy?IC=Ng==&NC=RGFpcnk=
+        Supiripola (n.d.). Lanka Sathosa Onlne Shopping | Daily Essentials. [online] Lanka Sathosa Onlne Shopping | Daily Essentials. Available at: https://www.lankasathosa.lk/
+        www.lankasathosa.lk. (n.d.). Lanka Sathosa. [online] Available at: https://www.lankasathosa.lk/shop?category=personal-care [Accessed 17 April. 2024]
+        Google. (2024). Search results for vegetables. Available at: https://www.google.com/search?q=vegetables (Accessed: 17 may 2024)
+        Google. (2024). Search results for cosmetics. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for dairy products. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for supermarket shopping images. Available at: [URL of the specific webpage where images are hosted] (Accessed: 19 April 2024)
+        Google. (2024). Search results for creative shopping logos. Available at: [URL of the specific webpage where logos are hosted] (Accessed: 21 April 2024)
+        Pixabay. (2024). Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ (Accessed: 21 April 2024)
+        Pixabay, 2024. Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ [Accessed 21 April 2024]
+        Pixabay, 2024. Milk images. Available at: https://pixabay.com/images/search/milk/ [Accessed 21 April 2024]
+        Pixabay, 2024. Cheese images. Available at: https://pixabay.com/images/search/cheese/ [Accessed 21 April 2024]
+        Pixabay, 2024. Yogurt images. Available at: https://pixabay.com/images/search/yogurt/ [Accessed 21 April 2024]
+        Pixabay, 2024. Butter images. Available at: https://pixabay.com/images/search/butter/ [Accessed 21 April 2024]
+        Keells Super, 2024. Keells Super home page. Available at: https://www.keellssuper.com/home [Accessed 22 April 2024]-->
+
+    <footer>
+        <section class="booking_page_footer">
+            <section class="footer_flex">
+                <section class="footer_infor">
+                    <p>GROCIES SUPERMARKET<br> 70/27, Obesekara Pura Mawatha,<br> Rajagiriya, Sri Lanka.</p><br>
+                    <a href="tel:+94112545422">+94 112 545 422</a><br><br>
+                    <a href="mailto:infor@therimbariohotel.com">Inquiries: infor@grociessupermarket.com</a><br>
+                    <a href="mailto:infor@therimbariohotel.com">Reservations:
+                        reservations@grociessupermarket.com</a><br><br>
+                </section>
+            </section>
+        </section>
+    </footer>
+    <script src="script/order_form.js"></script>
+    <script src="script/searchBar.js"></script>
+</body>
+
+</html>

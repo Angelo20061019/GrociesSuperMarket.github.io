@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Grocies Supermarket" content="width=device-width, initial-scale=1.0">
+    <title>Grocies Supermarket</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/1-removebg-preview.png">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <!-- Navigation bar , logo & search bar -->
+    <header>
+        <section class="headerMain">
+            <nav class="bar">
+                <a href="index.html">
+                    <img class="logoimg" src="image/new_logo_-removebg-preview.png" alt="logo" width="150" height="110">
+                </a>
+                <div class="sreach__nav">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn1">
+                        MENU
+                    </label>
+                    <ul class="nav-links">
+                        <li class="nav-link"><a href="index.html"> <b>Home</b></a></li>
+                        <li class="nav-link"><a href="about.html"><b>About Us</b></a></li>
+                        <li class="nav-link product"><b>Products</b>
+                            <ul class="dropdown">
+                                <li class="nav-link"><a href="dairy_product.html"><b>Dairy Products</b></a></li>
+                                <li class="nav-link"><a href="fruit.html"><b>Fruits</b> </a></li>
+                                <li class="nav-link"><a href="meatNseafood.html"><b>Meat and Sea food</b></a></li>
+                                <li class="nav-link"><a href="bakingNcooking.html"><b>Baking and Cooking
+                                            Ingredients</b></a></li>
+                                <li class="nav-link"><a href="vegetables.html"><b>Vegetables Products</b></a></li>
+                                <li class="nav-link"><a href="CosmeticsAndSkinCareProduct.html"><b>Cosmetics & Skin care
+                                            product</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link"><a href="loyalty_registation.html"><b>Loyalty Rgistation</b></a></li>
+                    </ul>
+                    <br>
+                    <div class="search">
+                        <input type="text" placeholder=Search>
+                        <a href="#">
+                            <i class="fas fa-search "></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="cart" id="cart">
+                    <a href="cart.html" target="_blank">
+                        <img src="image/cart_new.png" width="40" height="36" alt="mainImage">
+
+                    </a>
+                </div>
+            </nav>
+        </section>
+
+    </header>
+    <!--dairy main image section-->
+    <section class="diary_main_image">
+        <div class="baking_main_text">
+            <div class="baking_small">
+                <P>come & buy </P>
+            </div>
+            <div class="baking_large">
+                BAKING & COOKING INGREDIENTS
+            </div>
+            <div class="baking_intro_para">
+                <p>JUST FOR YOU !</p>
+            </div>
+            <div class="dairymainimagesection">
+                <img class="dairymainimage" src="image/bread-6486963_1280.jpg" alt="dairy image">
+            </div>
+        </div>
+    </section>
+    <!--milk product section-->
+    <section class="diary_paroducts">
+        <div class="diary_milk_h1_para">
+            <h1 class="diary_product_h1">
+                Baking Ingredients
+            </h1>
+            <p class="diary_product_para">
+                Premium baking ingredients: flour, sugar, spices, and more. Perfect for all your baking needs,
+                ensuring delicious homemade treats!
+            </p>
+        </div>
+        <div class="diary_products_milk">
+            <div class="diary_product_milk_1">
+                <div class="box1">
+                    <a href="#popup-box1">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img"
+                                src="image/lump-sugar-548647_1280-removebg-preview.png" alt="milk" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_para">
+                                    Sugar cubs
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.500.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box1" class="modal1">
+                    <div class="content1">
+                        <div class="popup-img1">
+                            <img class="diary_product_milk_2_img1"
+                                src="image/lump-sugar-548647_1280-removebg-preview.png" alt="milk" style="width : 90%;">
+                        </div>
+                        <div class="popup-content1">
+                            <a class="close-btn1" href="#">&times;</a>
+                            <h1 class="popup-h1-1">Sugar cubs</h1>
+                            <p class="popup-content-p1">1 packet = RS.500.00</p>
+                            <div class="popup-input1">
+                                Packet : <input type="number" id="sugar-cube-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn1" id="sugar-cube" data-product-name="Sugar cubs"
+                                data-product-price="500"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box2">
+                    <a href="#popup-box2">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img"
+                                src="image/creamer-powder-4402671_1280-removebg-preview.png" alt="milk"
+                                style="width : 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_h1">
+                                    Baking powder
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.800.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box2" class="modal2">
+                    <div class="content2">
+                        <div class="popup-img2">
+                            <img class="diary_product_milk_2_img"
+                                src="image/creamer-powder-4402671_1280-removebg-preview.png" alt="milk"
+                                style="width : 90%;">
+                        </div>
+                        <div class="popup-content2">
+                            <a class="close-btn2" href="#">&times;</a>
+                            <h1 class="popup-h1-2">Baking powder</h1>
+                            <p class="popup-content-p2">1 packet = RS.800.00</p>
+                            <div class="popup-input2">
+                                Packet : <input type="number" id="baking-powder-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn2" id="baking-powder" data-product-name="Baking powder"
+                                data-product-price="800"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box3">
+                    <a href="#popup-box3">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_3_img" src="image/eggs-2747445_1280-removebg-preview.png"
+                                alt="milk" style="width :60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Eggs
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.850.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box3" class="modal3">
+                    <div class="content3">
+                        <div class="popup-img3">
+                            <img class="diary_product_milk_2_img3" src="image/eggs-2747445_1280-removebg-preview.png"
+                                alt="milk" style="width : 90%;">
+                        </div>
+                        <div class="popup-content3">
+                            <a class="close-btn3" href="#">&times;</a>
+                            <h1 class="popup-h1-3">Eggs</h1>
+                            <p class="popup-content-p3">1 packet = RS.850.00</p>
+                            <div class="popup-input3">
+                                Packets : <input type="number" id="eggs-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn3" id="eggs" data-product-name="Eggs" data-product-price="850"> Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box4">
+                    <a href="#popup-box4">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/flour-1581967_1280-removebg-preview.png" alt="milk"
+                                class="diary_product_milk_3_img" style="width :40%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Flour
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.550.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box4" class="modal4">
+                    <div class="content4">
+                        <div class="popup-img4">
+                            <img class="diary_product_milk_2_img4" src="image/flour-1581967_1280-removebg-preview.png"
+                                alt="milk" style="width :90%;">
+                        </div>
+                        <div class="popup-content4">
+                            <a class="close-btn4" href="#">&times;</a>
+                            <h1 class="popup-h1-4">Flour</h1>
+                            <p class="popup-content-p4">1Kg = RS.1550.00</p>
+                            <div class="popup-input4">
+                                Kg : <input type="number" id="flour-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn4" id="flour" data-product-name="Flour" data-product-price="550">
+                                Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--cheese product section-->
+    <section class="diary_paroducts">
+        <div class="diary_milk_h1_para">
+            <h1 class="diary_product_h1">
+                Cooking Ingredients
+            </h1>
+            <p class="diary_product_para">
+                Premium cooking ingredients for all your culinary needs. Discover fresh herbs, spices, oils,
+                and more to elevate your dishes.
+            </p>
+        </div>
+        <div class="diary_products_milk">
+            <div class="diary_product_milk_1">
+                <div class="box5">
+                    <a href="#popup-box5">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img"
+                                src="image/onion-bulbs-84722_1280-removebg-preview.png" alt="Cheese"
+                                style="width :60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_para">
+                                    Onion
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.450.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div id="popup-box5" class="modal5">
+                    <div class="content5">
+                        <div class="popup-img5">
+                            <img class="diary_product_milk_2_img5"
+                                src="image/onion-bulbs-84722_1280-removebg-preview.png" alt="milk" style="width :90%;">
+                        </div>
+                        <div class="popup-content5">
+                            <a class="close-btn5" href="#">&times;</a>
+                            <h1 class="popup-h1-5">Onion</h1>
+                            <p class="popup-content-p5">1 Kg = RS.450.00</p>
+                            <div class="popup-input5">
+                                Kg : <input type="number" id="onion-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn5" id="onion" data-product-name="Onion" data-product-price="450">
+                                Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box6">
+                    <a href="#popup-box6">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/garlic-1238337_1280-removebg-preview.png"
+                                alt="Cheese" style="width :60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_h1">
+                                    Garlic
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    Rs.200.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box6" class="modal6">
+                    <div class="content6">
+                        <div class="popup-img6">
+                            <img class="diary_product_milk_2_img6" src="image/garlic-1238337_1280-removebg-preview.png"
+                                alt="milk" style="width :90%;">
+                        </div>
+                        <div class="popup-content6">
+                            <a class="close-btn6" href="#">&times;</a>
+                            <h1 class="popup-h1-6">Garlic</h1>
+                            <p class="popup-content-p6">1Kg = RS.200.00</p>
+                            <div class="popup-input6">
+                                Kg : <input type="number" id="garlic-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn6" id="garlic" data-product-name="Garlic" data-product-price="200">
+                                Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box7">
+                    <a href="#popup-box7">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_3_img" src="image/oil-939644_1280-removebg-preview.png"
+                                alt="Cheese" style="width :60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Olive oil
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.1300.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box7" class="modal7">
+                    <div class="content7">
+                        <div class="popup-img7">
+                            <img class="diary_product_milk_2_img7" src="image/oil-939644_1280-removebg-preview.png"
+                                alt="milk" style="width :90%;">
+                        </div>
+                        <div class="popup-content7">
+                            <a class="close-btn7" href="#">&times;</a>
+                            <h1 class="popup-h1-7">Olive oil</h1>
+                            <p class="popup-content-p7">1 Bottle = RS.1300.00</p>
+                            <div class="popup-input7">
+                                Bottle : <input type="number" id="olive-oil-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn7" id="olive-oil" data-product-name="Olive oil"
+                                data-product-price="1300"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary_product_milk_1">
+                <div class="box8">
+                    <a href="#popup-box8">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/salt-removebg-preview.png" alt="Cheese" class="diary_product_milk_3_img"
+                                style="width :60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Salt
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    Rs.750.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box8" class="modal8">
+                    <div class="content8">
+                        <div class="popup-img8">
+                            <img class="diary_product_milk_2_img8" src="image/salt-removebg-preview.png" alt="milk"
+                                style="width :90%;">
+                        </div>
+                        <div class="popup-content8">
+                            <a class="close-btn8" href="#">&times;</a>
+                            <h1 class="popup-h1-8">Salt</h1>
+                            <p class="popup-content-p8">1 packet = RS.750.00</p>
+                            <div class="popup-input8">
+                                Packet : <input type="number" id="salt-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn8" id="salt" data-product-name="Salt" data-product-price="750"> Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script/dairy.js"></script>
+
+
+
+    <!--footer section -->
+
+    <!-- www.keellssuper.com. (n.d.). Keells Online. [online] Available at: https://www.keellssuper.com/productDetail?itemcode=91287&Munchee_Super_Cream_Cracker_490g [Accessed 10 April. 2024]
+        en.wikipedia.org. (n.d.). grocies supermarket web - Search results - Wikipedia. [online] Available at: https://en.wikipedia.org/w/index.php?search=grocies+supermarket+web+&title=Special%3ASearch&ns0=1 [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Cargills Online - Sri Lanka’s Freshest Online Grocery Store. [online] Available at: https://cargillsonline.com/?utm_source=Sprig&utm_medium=Google+Ads&gad_source=1&gclid=EAIaIQobChMIhNLD0YfohgMVXqNmAh1aKQHlEAAYASAAEgJLsvD_BwE [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Vegetables. [online] Available at: https://cargillsonline.com/Product/Vegetables?IC=MjM=&NC=VmVnZXRhYmxlcw==
+        uatapp.cargillsonline.com. (n.d.). Dairy. [online] Available at: https://cargillsonline.com/Product/Dairy?IC=Ng==&NC=RGFpcnk=
+        Supiripola (n.d.). Lanka Sathosa Onlne Shopping | Daily Essentials. [online] Lanka Sathosa Onlne Shopping | Daily Essentials. Available at: https://www.lankasathosa.lk/
+        www.lankasathosa.lk. (n.d.). Lanka Sathosa. [online] Available at: https://www.lankasathosa.lk/shop?category=personal-care [Accessed 17 April. 2024]
+        Google. (2024). Search results for vegetables. Available at: https://www.google.com/search?q=vegetables (Accessed: 17 may 2024)
+        Google. (2024). Search results for cosmetics. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for dairy products. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for supermarket shopping images. Available at: [URL of the specific webpage where images are hosted] (Accessed: 19 April 2024)
+        Google. (2024). Search results for creative shopping logos. Available at: [URL of the specific webpage where logos are hosted] (Accessed: 21 April 2024)
+        Pixabay. (2024). Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ (Accessed: 21 April 2024)
+        Pixabay, 2024. Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ [Accessed 21 April 2024]
+        Pixabay, 2024. Milk images. Available at: https://pixabay.com/images/search/milk/ [Accessed 21 April 2024]
+        Pixabay, 2024. Cheese images. Available at: https://pixabay.com/images/search/cheese/ [Accessed 21 April 2024]
+        Pixabay, 2024. Yogurt images. Available at: https://pixabay.com/images/search/yogurt/ [Accessed 21 April 2024]
+        Pixabay, 2024. Butter images. Available at: https://pixabay.com/images/search/butter/ [Accessed 21 April 2024]
+        Keells Super, 2024. Keells Super home page. Available at: https://www.keellssuper.com/home [Accessed 22 April 2024]-->
+
+    <footer>
+        <section class="booking_page_footer">
+            <section class="footer_flex">
+                <section class="footer_infor">
+                    <p>GROCIES SUPERMARKET<br> 70/27, Obesekara Pura Mawatha,<br> Rajagiriya, Sri Lanka.</p><br>
+                    <a href="tel:+94112545422">+94 112 545 422</a><br><br>
+                    <a href="mailto:infor@therimbariohotel.com">Inquiries: infor@grociessupermarket.com</a><br>
+                    <a href="mailto:infor@therimbariohotel.com">Reservations:
+                        reservations@grociessupermarket.com</a><br><br>
+                </section>
+            </section>
+        </section>
+    </footer>
+
+</body>
+
+</html>

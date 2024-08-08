@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Grocies Supermarket" content="width=device-width, initial-scale=1.0">
+    <title>Grocies Supermarket</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/1-removebg-preview.png">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <!-- Navigation bar , logo & search bar -->
+    <header>
+        <section class="header_main">
+            <nav class="bar">
+                <a href="index.html">
+                    <img class="logoimg" src="image/new_logo_-removebg-preview.png" alt="logo" width="150" height="110">
+                </a>
+                <div class="sreach__nav">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn1">
+                        MENU
+                    </label>
+                    <ul class="nav-links">
+                        <li class="nav-link"><a href="index.html"> <b>Home</b></a></li>
+                        <li class="nav-link"><a href="about.html"><b>About Us</b></a></li>
+                        <li class="nav-link product"><b>Products</b>
+                            <ul class="dropdown">
+                                <li class="nav-link"><a href="dairy_product.html"><b>Dairy Products</b></a></li>
+                                <li class="nav-link"><a href="fruit.html"><b>Fruits</b> </a></li>
+                                <li class="nav-link"><a href="meatNseafood.html"><b>Meat and Sea food</b></a></li>
+                                <li class="nav-link"><a href="bakingNcooking.html"><b>Baking and Cooking
+                                            Ingredients</b></a></li>
+                                <li class="nav-link"><a href="vegetables.html"><b>Vegetables Products</b></a></li>
+                                <li class="nav-link"><a href="CosmeticsAndSkinCareProduct.html"><b>Cosmetics & Skin care
+                                            product</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link"><a href="loyalty_registation.html"><b>Loyalty Rgistation</b></a></li>
+                    </ul>
+                    <br>
+                    <div class="search">
+                        <input type="text" placeholder=Search>
+                        <a href="#">
+                            <i class="fas fa-search "></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="cart" id="cart">
+                    <a href="cart.html">
+                        <img src="image/cart_new.png" width="40" height="36" alt="mainImage">
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!--dairy main image section-->
+    <section class="diary_main_image">
+        <div class="diary_main_text">
+            <div class="diary_small">
+                <P>come & buy </P>
+            </div>
+            <div class="diary_large">
+                FRUITS
+            </div>
+            <div class="diary_intro_para">
+                <p>JUST FOR YOU !</p>
+            </div>
+            <section class="da  irymainimagesection">
+                <img class="dairymainimage" src="image/fruits_main.jpg" alt="dairy image">
+            </section>
+        </div>
+    </section>
+    <!--milk product section-->
+    <section class="diary_paroducts">
+        <div class="diary_milk_h1_para">
+            <h1 class="diary_product_h1">
+                Fruits
+            </h1>
+            <p class="diary_product_para">
+                Fresh, vibrant fruits bursting with natural flavors and nutrients. From juicy oranges to crisp apples,
+                our selection
+                promises quality and variety.
+            </p>
+        </div>
+        <div class="fruits_main_div">
+            <div class="fruits_1">
+                <div class="box1">
+                    <a href="#popup-box1">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img" src="image/apple-1834639_1280-removebg-preview.png"
+                                alt="milk" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_para">
+                                    Apple
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    1kg <br> Rs.300.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box1" class="modal1">
+                    <div class="content1">
+                        <div class="popup-img1">
+                            <img class="diary_product_milk_2_img1" src="image/apple-1834639_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content1">
+                            <a class="close-btn1" href="#">&times;</a>
+                            <h1 class="popup-h1-1">Apple</h1>
+                            <p class="popup-content-p1">1kg = RS.300.00</p>
+                            <div class="popup-input8">
+                                Kg : <input type="number" id="apple-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn1" id="apple" data-product-name="Apple" data-product-price="300">
+                                Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fruits_1">
+                <div class="box2">
+                    <a href="#popup-box2">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_2_img"
+                                src="image/breakfast-1239438_1280-removebg-preview.png" alt="milk" style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_2_figcap_h1">
+                                    Kiwi
+                                </h1>
+                                <p class="diary_product_milk_2_figcap_para">
+                                    1kg <br> Rs.600.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box2" class="modal2">
+                    <div class="content2">
+                        <div class="popup-img2">
+                            <img class="diary_product_milk_2_img2"
+                                src="image/breakfast-1239438_1280-removebg-preview.png" alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content2">
+                            <a class="close-btn2" href="#">&times;</a>
+                            <h1 class="popup-h1-2">Kiwi</h1>
+                            <p class="popup-content-p2">1Kg = RS.600.00</p>
+                            <div class="popup-input2">
+                                Kg : <input type="number" id="kiwi-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn2" id="kiwi" data-product-name="Kiwi" data-product-price="600"> Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fruits_1">
+                <div class="box3">
+                    <a href="#popup-box3">
+                        <figure class="diary_product_milk_1_figure">
+                            <img class="diary_product_milk_3_img"
+                                src="image/strawberries-272812_1280-removebg-preview(2).png" alt="milk"
+                                style="width: 60%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Strawberries
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    1kg <br> Rs.850.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box3" class="modal3">
+                    <div class="content3">
+                        <div class="popup-img3">
+                            <img class="diary_product_milk_2_img3"
+                                src="image/strawberries-272812_1280-removebg-preview(2).png" alt="milk"
+                                style="width: 90%;">
+                        </div>
+                        <div class="popup-content3">
+                            <a class="close-btn3" href="#">&times;</a>
+                            <h1 class="popup-h1-3">Strawberries</h1>
+                            <p class="popup-content-p3">1Kg = RS.850.00</p>
+                            <div class="popup-input3">
+                                Kg : <input type="number" id="Strawberries-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn3" id="Strawberries" data-product-name="Strawberries"
+                                data-product-price="850"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fruits_1">
+                <div class="box4">
+                    <a href="#popup-box4">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/banana-2449019_1280-removebg-preview.png" alt="milk"
+                                class="diary_product_milk_3_img" style="width: 40%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Banana
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    1kg <br> Rs.1550.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box4" class="modal4">
+                    <div class="content4">
+                        <div class="popup-img4">
+                            <img class="diary_product_milk_2_img4" src="image/banana-2449019_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content4">
+                            <a class="close-btn4" href="#">&times;</a>
+                            <h1 class="popup-h1-4">Banana</h1>
+                            <p class="popup-content-p4">1Kg = RS.1550.00</p>
+                            <div class="popup-input4">
+                                Kg : <input type="number" id="banana-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn4" id="banana" data-product-name="Banana" data-product-price="1550">
+                                Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fruits_1">
+                <div class="box5">
+                    <a href="#popup-box5">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/watermelon-74342_640-removebg-preview.png" alt="milk" style="width: 40%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Watermelon
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    1kg <br> Rs.1050.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box5" class="modal5">
+                    <div class="content5">
+                        <div class="popup-img5">
+                            <img class="diary_product_milk_2_img5" src="image/watermelon-74342_640-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content5">
+                            <a class="close-btn5" href="#">&times;</a>
+                            <h1 class="popup-h1-5">Watermelon</h1>
+                            <p class="popup-content-p5">1Kg = RS.1050.00</p>
+                            <div class="popup-input5">
+                                Kg : <input type="number" id="watermelon-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn5" id="watermelon" data-product-name="Watermelon"
+                                data-product-price="1050"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fruits_1">
+                <div class="box6">
+                    <a href="#popup-box6">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/mango-1239241_1280-removebg-preview.png" alt="milk"
+                                class="diary_product_milk_3_img" style="width: 40%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Mango
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    1kg <br> Rs.250.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box6" class="modal6">
+                    <div class="content6">
+                        <div class="popup-img6">
+                            <img class="diary_product_milk_2_img6" src="image/mango-1239241_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content6">
+                            <a class="close-btn6" href="#">&times;</a>
+                            <h1 class="popup-h1-6">Mango</h1>
+                            <p class="popup-content-p6">1Kg = RS.250.00</p>
+                            <div class="popup-input6">
+                                Kg : <input type="number" id="mango-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn6" id="mango" data-product-name="Mango" data-product-price="250">
+                                Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fruits_1">
+                <div class="box7">
+                    <a href="#popup-box7">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/pear-1620467_1280-removebg-preview.png" alt="milk"
+                                class="diary_product_milk_3_img" style="width: 40%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Pear
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    1kg <br> Rs.150.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box7" class="modal7">
+                    <div class="content7">
+                        <div class="popup-img7">
+                            <img class="diary_product_milk_2_img8" src="image/pear-1620467_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content7">
+                            <a class="close-btn7" href="#">&times;</a>
+                            <h1 class="popup-h1-7">Pear</h1>
+                            <p class="popup-content-p7">1Kg = RS.150.00</p>
+                            <div class="popup-input7">
+                                Kg : <input type="number" id="pear-qty" class="quantity" placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn7" id="pear" data-product-name="Pear" data-product-price="150"> Add
+                                to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fruits_1">
+                <div class="box8">
+                    <a href="#popup-box8">
+                        <figure class="diary_product_milk_1_figure">
+                            <img src="image/grapes-582207_1280-removebg-preview.png" alt="milk"
+                                class="diary_product_milk_3_img" style="width: 40%;">
+                            <figcaption class="diary_product_milk_2_figcap">
+                                <h1 class="diary_product_milk_3_figcap_h1">
+                                    Green grapes
+                                </h1>
+                                <p class="diary_product_milk_3_figcap_para">
+                                    1kg <br> Rs.150.00
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="popup-box8" class="modal8">
+                    <div class="content8">
+                        <div class="popup-img8">
+                            <img class="diary_product_milk_2_img8" src="image/grapes-582207_1280-removebg-preview.png"
+                                alt="milk" style="width: 90%;">
+                        </div>
+                        <div class="popup-content8">
+                            <a class="close-btn8" href="#">&times;</a>
+                            <h1 class="popup-h1-8">Green grapes</h1>
+                            <p class="popup-content-p8">1Kg = RS.150.00</p>
+                            <div class="popup-input8">
+                                Kg : <input type="number" id="green-grapes-qty" class="quantity"
+                                    placeholder="enter liters">
+                            </div>
+                            <button class="popup-btn8" id="green-grapes" data-product-name="Green grapes"
+                                data-product-price="150"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/dairy.js"></script>
+
+    <!--footer section -->
+
+    <!-- www.keellssuper.com. (n.d.). Keells Online. [online] Available at: https://www.keellssuper.com/productDetail?itemcode=91287&Munchee_Super_Cream_Cracker_490g [Accessed 10 April. 2024]
+        en.wikipedia.org. (n.d.). grocies supermarket web - Search results - Wikipedia. [online] Available at: https://en.wikipedia.org/w/index.php?search=grocies+supermarket+web+&title=Special%3ASearch&ns0=1 [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Cargills Online - Sri Lanka’s Freshest Online Grocery Store. [online] Available at: https://cargillsonline.com/?utm_source=Sprig&utm_medium=Google+Ads&gad_source=1&gclid=EAIaIQobChMIhNLD0YfohgMVXqNmAh1aKQHlEAAYASAAEgJLsvD_BwE [Accessed 10 April. 2024]
+        uatapp.cargillsonline.com. (n.d.). Vegetables. [online] Available at: https://cargillsonline.com/Product/Vegetables?IC=MjM=&NC=VmVnZXRhYmxlcw==
+        uatapp.cargillsonline.com. (n.d.). Dairy. [online] Available at: https://cargillsonline.com/Product/Dairy?IC=Ng==&NC=RGFpcnk=
+        Supiripola (n.d.). Lanka Sathosa Onlne Shopping | Daily Essentials. [online] Lanka Sathosa Onlne Shopping | Daily Essentials. Available at: https://www.lankasathosa.lk/
+        www.lankasathosa.lk. (n.d.). Lanka Sathosa. [online] Available at: https://www.lankasathosa.lk/shop?category=personal-care [Accessed 17 April. 2024]
+        Google. (2024). Search results for vegetables. Available at: https://www.google.com/search?q=vegetables (Accessed: 17 may 2024)
+        Google. (2024). Search results for cosmetics. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for dairy products. Available at: [URL of the specific webpage] (Accessed: 19 April 2024)
+        Google. (2024). Search results for supermarket shopping images. Available at: [URL of the specific webpage where images are hosted] (Accessed: 19 April 2024)
+        Google. (2024). Search results for creative shopping logos. Available at: [URL of the specific webpage where logos are hosted] (Accessed: 21 April 2024)
+        Pixabay. (2024). Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ (Accessed: 21 April 2024)
+        Pixabay, 2024. Vegetables images. Available at: https://pixabay.com/images/search/vegetables%20/ [Accessed 21 April 2024]
+        Pixabay, 2024. Milk images. Available at: https://pixabay.com/images/search/milk/ [Accessed 21 April 2024]
+        Pixabay, 2024. Cheese images. Available at: https://pixabay.com/images/search/cheese/ [Accessed 21 April 2024]
+        Pixabay, 2024. Yogurt images. Available at: https://pixabay.com/images/search/yogurt/ [Accessed 21 April 2024]
+        Pixabay, 2024. Butter images. Available at: https://pixabay.com/images/search/butter/ [Accessed 21 April 2024]
+        Keells Super, 2024. Keells Super home page. Available at: https://www.keellssuper.com/home [Accessed 22 April 2024]-->
+
+    <footer>
+        <section class="booking_page_footer">
+            <section class="footer_flex">
+                <section class="footer_infor">
+                    <p>GROCIES SUPERMARKET<br> 70/27, Obesekara Pura Mawatha,<br> Rajagiriya, Sri Lanka.</p><br>
+                    <a href="tel:+94112545422">+94 112 545 422</a><br><br>
+                    <a href="mailto:infor@therimbariohotel.com">Inquiries: infor@grociessupermarket.com</a><br>
+                    <a href="mailto:infor@therimbariohotel.com">Reservations:
+                        reservations@grociessupermarket.com</a><br><br>
+                </section>
+            </section>
+        </section>
+    </footer>
+
+    <script src="script/searchBar.js"></script>
+</body>
+
+</html>
